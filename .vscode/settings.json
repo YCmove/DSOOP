@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "iostream": "cpp",
+        "deque": "cpp",
+        "cmath": "cpp",
+        "ostream": "cpp",
+        "string": "cpp",
+        "array": "cpp",
+        "hash_map": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp",
+        "utility": "cpp",
+        "sstream": "cpp",
+        "queue": "cpp",
+        "algorithm": "cpp",
+        "*.tcc": "cpp",
+        "istream": "cpp",
+        "typeinfo": "cpp",
+        "map": "cpp",
+        "list": "cpp"
+    }
+}
