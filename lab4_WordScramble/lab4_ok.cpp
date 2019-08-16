@@ -31,6 +31,7 @@ int main(){
         
         for (int i = 0 ; i <= size; i++){
 
+            // 區別一個word, 遇到空白或是最後一個character
             if(s[i] == ' ' || i == size -1){
                 if (i == size -1){
                     word.push_back(s[i]);

@@ -87,7 +87,7 @@ int main(){
                 }
             }
 
-            // died, back isnecesarry
+            // died, back is necesarry
             int died = *knife;
             int back = peoples.back();
             peoples.erase(knife);

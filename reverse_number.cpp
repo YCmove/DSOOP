@@ -9,7 +9,8 @@ int main(){
     int reminder = 0;
     int reversed = 0;
 
-    while(num != 10){
+    while(num != 0){
+    // while(num != 10){
         reminder = num % 10;
         reversed = reversed * 10 + reminder;
         num /= 10;

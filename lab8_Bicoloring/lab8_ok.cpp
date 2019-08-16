@@ -52,6 +52,7 @@ int main(){
         }
         cin >> n_edges;
 
+        // 建立int的vector of vector
         vector<int> relation;
         vector<vector<int> > matrix(n_nodes, relation);
 
@@ -64,6 +65,7 @@ int main(){
 
         // print_nested_vec(matrix);
 
+        // 初始化color table
         // 0 是沒有上色過, 顏色1 和 顏色2
         vector<int> color_table(n_nodes,0);
 

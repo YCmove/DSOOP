@@ -22,6 +22,7 @@ int main()
         bool prime=true;
         for(int j=0;j<primes.size() && primes[j]*primes[j] <= i;j++)
         {
+            // 不能被現有的prime整除
             if(i % primes[j] == 0)
             {
                 prime=false;
@@ -122,7 +123,8 @@ int main()
             // cout << "---------" << endl;
         }
         // cout << "Ans: " << peoples.front() << endl;
-        print_vec(peoples);
+        // print_vec(peoples);
+        cout << peoples.front();
     }
 
 

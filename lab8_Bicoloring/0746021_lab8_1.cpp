@@ -27,6 +27,7 @@ bool check_color(int node, int marked_color, vector<vector<int> > & vec, vector<
         return false;
     } else if (color_table[node] == marked_color){
         // cout << "same color: " << color_table[node] << " and " << marked_color << endl;
+        // 一樣就 true 不再往下走
         return true;
     }
     // 把這一點上色

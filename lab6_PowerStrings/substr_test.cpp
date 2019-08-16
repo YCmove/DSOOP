@@ -9,7 +9,7 @@ int main(){
     cout << s.substr(0, 0) << endl; // 沒有東西！
     cout << s.substr(0, 1) << endl; // a
     cout << s.substr(0, 4) << endl; // abcd
-    cout << s.substr(2, 4) << endl; // cd
+    cout << s.substr(2, 4) << endl; // cdef
 
     return 0;
 }

@@ -42,8 +42,34 @@ for(ptr=begin ; ptr!=end ; ptr++){
     cout << *ptr << endl;   // 1, 2, 3, 4, 5
 }
 ```
+
+## vector
+- vec.front() - 回傳 vector 第一個元素的值。
+- vec.back() - 回傳 vector 最尾元素的值。
+- vec.push_back() - 新增元素至 vector 的尾端，必要時會進行記憶體配置。
+- vec.pop_back() - 刪除 vector 最尾端的元素。不會return 東西回來！
+- vec.insert() - 插入一個或多個元素至 vector 內的任意位置。
+- v2.insert(v2.begin()+4, L"3");   //在指定位置，例如在第五个元素前插入一个元素
+- v2.insert(v2.end(), L"3");   //在末尾插入一个元素
+- v2.insert(v2.begin(), L"3");   //在开头插入一个元素
+- v2.erase(v2.begin()); //删除开头的元素
+- v2.erase(v2.begin(),v2.end); //删除[begin,end]区间的元素
+ 
+
 ## vector 最大與最小元素使用
 - [max_element and min_element](https://riptutorial.com/cplusplus/example/11151/find-max-and-min-element-and-respective-index-in-a-vector)
+```
+std::vector<int> v = {5, 2, 8, 10, 9}; 
+int maxElementIndex = std::max_element(v.begin(),v.end()) - v.begin();
+int maxElement = *std::max_element(v.begin(), v.end());
+
+int minElementIndex = std::min_element(v.begin(),v.end()) - v.begin();
+int minElement = *std::min_element(v.begin(), v.end());
+
+std::cout << "maxElementIndex:" << maxElementIndex << ", maxElement:" << maxElement << '\n';
+std::cout << "minElementIndex:" << minElementIndex << ", minElement:" << minElement << '\n';
+```
+
 
 ## char 轉 int
 - `atoi(argv[3])`
@@ -69,7 +95,7 @@ s.size() // 看字串長度
 s.length() // 看字串長度，等同上面
 s.at(index) // 拿取某個index的char
 s.empty() // 是否為空字串
-s.substr(1, 3) // 會拿出index = 1 到 3, (包含1, 3) 總共三個字母出來
+s.substr(1, 3) // 會拿出index = 1 往後數3個(包含1)
 s.find("live")
 
 // string 轉 ASCII, 不需要 4 byte 去 for loop
